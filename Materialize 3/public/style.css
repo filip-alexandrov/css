@@ -1,0 +1,13 @@
+span.lever.grey::after {
+  background-color: #424242 !important;
+}
+.inline-icon {
+  vertical-align: bottom;
+  font-size: 18px !important;
+}
+.dropdown-content li > span {
+  color: #212121;
+}
+.input-field .prefix {
+  color: #e53935;
+}

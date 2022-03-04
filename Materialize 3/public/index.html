@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materhorn Finance</title>
+    <link rel="stylesheet" href="materialize.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script defer src="materialize.js"></script>
+    <script defer src="index.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+    <ul id="dropdown1" class="dropdown-content">
+      <li class="grey darken-3">
+        <a class="grey-text text-lighten-3 menu-text" href="#!">Payments</a>
+      </li>
+      <li class="grey darken-4">
+        <a class="grey-text text-lighten-3 menu-text" href="#!">Accounts</a>
+      </li>
+
+      <li class="grey darken-3">
+        <a class="grey-text text-lighten-3 menu-text" href="#!">Products</a>
+      </li>
+    </ul>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <a class="sidenav-close" href="#!" style="color: rgba(0, 0, 0, 0.54)"
+          ><i class="material-icons left mr" style="margin-right: 0px"
+            >keyboard_arrow_left</i
+          >Close</a
+        >
+      </li>
+
+      <li><a href="#!">Home</a></li>
+      <li><a href="#!">Dashboard</a></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header"
+              >Set Up<i class="material-icons" style="margin-right: 0"
+                >arrow_drop_down</i
+              ></a
+            >
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">First</a></li>
+                <li><a href="#!">Second</a></li>
+                <li><a href="#!">Third</a></li>
+                <li><a href="#!">Fourth</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Staking</a></li>
+      <li class="red darken-2">
+        <a href="mobile.html" class="grey-text text-lighten-4"
+          >Wallet not Connected</a
+        >
+      </li>
+      <li class="green darken-2">
+        <a href="mobile.html" class="grey-text text-lighten-3 hide"
+          >0x87d Connected</a
+        >
+      </li>
+      <li><a href="#!">Second Sidebar Link</a></li>
+    </ul>
+
+    <!--     <ul class="right hide-on-med-and-down">
+      <li><a href="#!">First Sidebar Link</a></li>
+      <li><a href="#!">Second Sidebar Link</a></li>
+      <li>
+        <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+          >Dropdown<i class="material-icons right">arrow_drop_down</i></a
+        >
+      </li>
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">First</a></li>
+        <li><a href="#!">Second</a></li>
+        <li><a href="#!">Third</a></li>
+        <li><a href="#!">Fourth</a></li>
+      </ul>
+    </ul> -->
+
+    <nav class="nav-extended grey darken-3">
+      <a
+        href="#"
+        data-target="mobile-demo"
+        class="sidenav-trigger left hide-on-extra-large-only"
+        ><i class="material-icons">menu</i></a
+      >
+      <div class="nav-wrapper container">
+        <a href="#!" class="brand-logo left hide-on-small-only"
+          >Materhorn Finance</a
+        >
+        <a href="#!" class="brand-logo center hide-on-med-and-up"
+          >Materhorn Finance</a
+        >
+        <ul class="right hide-on-small-only">
+          <li>
+            <a
+              class="
+                btn
+                grey
+                lighten-2
+                grey-text
+                text-darken-3
+                modal-trigger
+                tooltipped
+              "
+              id="stake-button"
+              data-tooltip="Please, connect your wallet"
+              href="#modal1"
+              ><i class="material-icons left">monetization_on</i>Stake</a
+            >
+          </li>
+          <li>
+            <a class="btn red darken-2 grey-text text-lighten-3">Connect</a>
+          </li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+          <li class="">
+            <a class="grey-text text-lighten-3 menu-text" href="sass.html"
+              >Home</a
+            >
+          </li>
+          <li class="grey darken-4">
+            <a class="grey-text text-lighten-3 menu-text" href="badges.html"
+              >Test</a
+            >
+          </li>
+          <li>
+            <a
+              class="dropdown-trigger menu-text"
+              href="#!"
+              data-target="dropdown1"
+              >Set Up<i class="material-icons right">arrow_drop_down</i></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- LOGIN MODAL -->
+
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <br />
+        <div class="row">
+          <form class="col s12">
+            <h4>Stake/Unstake MATER</h4>
+
+            <p class="text-darken-1 grey-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              necessitatibus, sapiente possimus earum nostrum itaque assumenda
+              quaerat maxime inventore reiciendis aut ducimus aliquam quasi
+              quos. Modi sint eos quos reprehenderit.
+            </p>
+            <div class="switch">
+              <label class="flow-text">
+                <span class="grey-text text-darken-4">Stake</span>
+                <input type="checkbox" />
+                <span class="lever grey"></span>
+                Unstake
+              </label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">swap_vertical_circle</i>
+              <input id="icon_prefix" type="text" class="invalid" />
+              <label for="icon_prefix">Amount</label>
+            </div>
+            <div class="input-field col s3">
+              <select class="icons">
+                <option value="" disabled selected>Cryptocurrency</option>
+                <option value="" data-icon="btc.png">
+                  <span>BTC</span>
+                </option>
+                <option value="" data-icon="eth.png">ETH</option>
+                <option value="" data-icon="matic.png">MATIC</option>
+              </select>
+              <label>Select asset to stake</label>
+            </div>
+            <div class="file-field input-field col s3">
+              <button
+                class="btn grey darken-3 waves-effect waves-ripple"
+                type="submit"
+                name="action"
+              >
+                <i class="material-icons left">all_inclusive</i>
+                MAX
+              </button>
+            </div>
+
+            <div class="row">
+              <div class="col s12">
+                <h6>APY during the first 2 Weeks</h6>
+                <p>
+                  To ensure the security of our protocol, there is 2 Weeks 0%
+                  vesting period, which you wont receive any interest on your
+                  staked asset. After the 2 Week period is over, you will be
+                  automatically quallified for receiving interest and the
+                  interest will be automatically reinvested. You can withdraw
+                  the invested amount at any time, but be aware that such action
+                  will result in restarting the 2 Week 0% vesting period.
+                </p>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              id="checkCredentials"
+              class="
+                modal-close
+                waves-effect waves-grey
+                btn-flat
+                right
+                disabled
+              "
+            >
+              Insufficient funds
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
